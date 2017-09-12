@@ -20,3 +20,5 @@ git remote -v # 查看远程服务器地址和仓库名称
 git push # push所有分支
 
 git push origin master # 将本地主分支推到远程主分支
+
+https://github.com/wzjang/xiangmu/blob/master/git%E5%91%BD%E4%BB%A4.txt
