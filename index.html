@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		  <!-- 让IE浏览器用最高模式渲染 -->
+	      <meta name="viewport" content="width=device-width, initial-scale=1">
+	      <!-- 视口标签：禁止伸缩 -->
+		  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+		  <link rel="stylesheet" href="elegant_font/style.css">
+		  <link rel="stylesheet" href="css/my.css"> 
+		  <link rel="stylesheet" href="css/style.css"> 
+          <link rel="stylesheet" href="css/font-awesome.min.css"> 
+
+		  <style>
+		  /* nva */
+		  .navbar{
+		  	background: rgba(21, 0, 0, 1.0);
+		  	padding: 10px;
+		  	z-index: 1;
+		  }
+		   .wow{
+		   	padding: 40px;
+		   }
+		   .long>img{
+		   	margin-top:0px; 
+		   }
+		    /* slider */
+		    .carousel-caption{
+		    top: 40%;
+		    line-height: 60px;
+		    }
+		    .carousel-caption p{
+		    line-height: 15px;
+		    font-size: 4em;
+		    color: #fff;
+		    transition: 2s;
+		    }
+		    .carousel-caption .one{
+		    transform:scale(0.2);
+		    }
+		    .carousel-caption>span{
+		    transition: 2s;
+		    }
+		    .carousel-caption .tow{ 
+		    transform: rotate(180deg);
+		    margin-right: -1600px;
+
+		    }
+            .services{
+            background: #150f14;
+            }
+		   .text{
+		   	margin-bottom: 30px;
+		   }
+		    /* Services */
+		    i:hover{
+           	transition: 1s;
+           	color: #fff;
+           	font-size: 5em;
+           }
+           .hegr,.service-box
+           {
+           	margin-bottom: 30px;
+           	height: 300px;
+           }
+		    /* portfolio */
+		   .imgag-img>img{
+		    width: 100%;
+		    margin-bottom: 15px;
+		   }
+           .imgag-img{
+           	position: relative;
+           }
+           .txt{
+           	position: absolute;
+           	top: 0px;
+           	left: 0px;
+           	width:100%;
+           	height: 100%;
+           	padding-top:60px; 
+           	color: #fff;
+           	text-align: center;
+           	background: #20181f;
+           	opacity: 0.6;
+           	display: none;
+           }
+           /* pricing */
+		   .Get{
+	        padding: 20px;
+		    border-bottom:1px solid #b92763; 
+		   }
+           .img-4>a{  
+           	border: 3px solid #fff;
+           	overflow: hidden;
+           	display: block;
+           }
+           a>img:hover{
+           	transition: 3s;
+           	transform: scale(1.5);
+           }
+		  </style>
+    </head>
+    <body>
+    <!-- HOME ABOUT SERVICES PORTFOLIO PRICING CONTACT US -->
+    <nav class="navbar navbar-fixed-top">
+    <!-- 反色的导航条  navbar navbar-inverse-->
+    <!-- 固定定位 navbar-fixed-top -->
+	  <!-- container-fluid指定的宽度100% -->
+	  <div class="container">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand long" href="#" text-center><img src="images/logo.png" alt=""></a>
+	    </div>
+	    <!-- 导航栏 -->
+	  <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+	    <ul class="nav navbar-nav">
+	      <li class="active">
+	        <li><a href="#">HOME</a></li>
+	        <li><a href="#about">ABOUT</a></li>
+	        <li><a href="#services">SERVICES</a></li>
+	        <li><a href="#portfolio">PORTFOLIO</a></li>
+	        <li><a href="#pricing">PRICING</a></li>
+	        <li><a href="#Contact Us">Contact Us</a></li>
+	        </li>
+	     </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	<!-- 轮播图 -->
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/slider/slider-img-1.jpg" alt="">
+      <div class="carousel-caption ">
+        <p class="one">Love Photography</p>
+		<span class="tow">Lorem ipsum dolor sit amet</span>
+		<bing class="tow">, consectetur adipisicing elit</bing>
+      </div>
+     
+    </div>
+    <div class="item">
+      <img src="images/slider/slider-img-2.jpg" alt="">
+      <div class="carousel-caption ">
+         <p>Focus Point</p>
+       <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+      </div>
+    </div>
+    <div class="item">
+      <img src="images/slider/slider-img-3.jpg" alt="">
+      <div class="carousel-caption ">
+        <p>Love Photography</p>
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    
+  </a>
+</div>
+  <div class="banner wow" id="about">
+     <div class="container">
+    	<div class="row">
+    		<div class="col-md-12 col-sm-12 col-xs-12 section-header fadeInDown text-center">
+    			<h2>About</h2>
+    			<p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, nam corporis quas, saepe minima error aperiam dolorum aliquam, quis deserunt eos eius quisquam odio itaque.</p>
+    		</div>
+    	</div>
+    	<div class="row">
+    		<div class="col-md-6 col-sm-6 col-xs-12">
+    		 <img src="images/features.png" alt="" width="100%" >
+    		</div>
+    		 <div class="col-md-6">
+    		 <div class="row">
+    		  <div class="row">
+    		  	<div class="col-md-11">
+    		  	  <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa sit, numquam amet voluptatibus obcaecati ea maiores totam nostrum, ad iure rerum quas harum ipsum. lobcaecati ea maiores totam nostrum, ad iure rerum quas harum ipsum. Rem ea ducimus quos quae quo.</p>
+    		  	</div>
+    		  </div>
+    		  <div class="row">
+    		  	<div class="col-md-11">
+    		  	  <strong>Bootstrap 4</strong>
+    		  	  <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam iusto, natus est ducimus saepe laborum</p>
+    		  	</div>
+    		  </div>
+    		  <div class="row">
+    		  	<div class="col-md-11">
+    		  	  <strong>Responisve Theme</strong>
+    		  	  <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam iusto, natus est ducimus saepe laborum Lorem ipsum dolor sit amet.</p>
+    		  	</div>
+    		  </div>
+    		  <div class="row">
+    		  	<div class="col-md-11">
+    		  	  <strong>HTML5/CSS3</strong>
+    		  	  <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam iusto, natus est ducimus saepe laborum Lorem ipsum dolor sit amet</p>
+    		  	</div>
+    		  </div>
+    		 </div>
+    	</div>
+    </div>
+   </div>
+    </div>
+    <div class="container-fluid wow services" id="services">
+     <div class="container">
+     <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown text-center">
+    			<h2>Services</h2>
+    			<p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, nam corporis quas, saepe minima error aperiam dolorum aliquam, quis deserunt eos eius quisquam odio itaque.</p>
+    		</div>
+    	</div>
+        <div class="row text-center">
+		  <div class="col-sm-6 col-md-4 hegr">
+		      <div class="service-box icon">
+		      <i class="icon_cone"></i>
+		        <h3>Advertising</h3>
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero praesentium quam nulla.</p>
+		        </div>
+		  </div>
+		  <div class="col-sm-6 col-md-4 hegr">
+		     <div class="service-box icon">
+		       <i class="icon_mug"></i>
+		       <h3>Advertising</h3>
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero praesentium quam nulla.</p>
+		       </div>
+		  </div>
+		  <div class="col-sm-6 col-md-4 hegr">
+		     <div class="service-box icon">
+		      <i class="icon_currency"></i>
+		        <h3>Advertising</h3>
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero praesentium quam nulla.</p>
+		       </div>
+		  </div>
+		  <div class="col-sm-6 col-md-4 hegr">
+		     <div class="service-box icon">
+		      <i class="icon_star-half_alt"></i>
+		        <h3>Advertising</h3>
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero praesentium quam nulla.</p>
+		     </div>
+		  </div>
+		  <div class="col-sm-6 col-md-4 hegr">
+		   <div class="service-box icon">
+		      <i class="icon_music"></i>
+		        <h3>Advertising</h3>
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero praesentium quam nulla.</p>
+		      </div>
+		  </div>
+		  <div class="col-sm-6 col-md-4 hegr">
+		     <div class="service-box icon">
+		      <i class="icon_cog"></i>
+		        <h3>Advertising</h3>
+		        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero praesentium quam nulla.</p>
+		      </div>
+		  </div>
+		</div>
+	   </div>
+    </div>
+ <!-- portfolio -->
+    <div class="container wow" id="portfolio">
+     <div class="row ">
+        <div class="col-md-12 col-sm-12 col-xs-12 section-header fadeInDown text-center">
+    	<h2>Portfolio</h2>
+    	<p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, nam corporis quas, saepe minima error aperiam dolorum aliquam, quis deserunt eos eius quisquam odio itaque.</p>
+    		</div>
+    	</div>
+        <div class="row text-center">
+		  <div class="col-sm-6 col-md-4 imgag-img">
+		   <img src="images/img-portfolio/03.jpg" alt="">
+		   <div class="txt">
+	           <h2>Lorem ipsum dolor</h2>
+	           <span>consectetur adipisicing elit. Quod,<br>
+	           nam corporis quas, saepe minima error 
+	           aperiam dolorum aliquam</span>
+           </div>
+		  </div>
+		  <div class="col-sm-6 col-md-4 imgag-img">
+		   <img src="images/img-portfolio/01.jpg" alt="">
+		   <div class="txt">
+	           <h2>Lorem ipsum dolor</h2>
+	           <span>consectetur adipisicing elit. Quod,<br>
+	           nam corporis quas, saepe minima error 
+	           aperiam dolorum aliquam</span>
+           </div>
+		  </div>
+		  <div class="col-sm-6 col-md-4 imgag-img">
+		   <img src="images/img-portfolio/04.jpg" alt="">
+		   <div class="txt">
+	           <h2>Lorem ipsum dolor</h2>
+	           <span>consectetur adipisicing elit. Quod,<br>
+	           nam corporis quas, saepe minima error 
+	           aperiam dolorum aliquam</span>
+           </div>
+		  </div>
+		  <div class="col-sm-6 col-md-4 imgag-img">
+		   <img src="images/img-portfolio/05.jpg" alt="">
+		   <div class="txt">
+	           <h2>Lorem ipsum dolor</h2>
+	           <span>consectetur adipisicing elit. Quod,<br>
+	           nam corporis quas, saepe minima error 
+	           aperiam dolorum aliquam</span>
+           </div>
+		  </div>
+		  <div class="col-sm-6 col-md-4 imgag-img">
+		   <img src="images/img-portfolio/06.jpg" alt="">
+		   <div class="txt">
+	           <h2>Lorem ipsum dolor</h2>
+	           <span>consectetur adipisicing elit. Quod,<br>
+	           nam corporis quas, saepe minima error 
+	           aperiam dolorum aliquam</span>
+           </div>
+		  </div>
+		  <div class="col-sm-6 col-md-4 imgag-img">
+		   <img src="images/img-portfolio/07.jpg" alt="">
+		   <div class="txt">
+	           <h2>Lorem ipsum dolor</h2>
+	           <span>consectetur adipisicing elit. Quod,<br>
+	           nam corporis quas, saepe minima error 
+	           aperiam dolorum aliquam</span>
+           </div>
+		  </div>
+		  <div class="col-sm-6 col-md-4 imgag-img">
+		   <img src="images/img-portfolio/08.jpg" alt="">
+		   <div class="txt">
+	           <h2>Lorem ipsum dolor</h2>
+	           <span>consectetur adipisicing elit. Quod,<br>
+	           nam corporis quas, saepe minima error 
+	           aperiam dolorum aliquam</span>
+           </div>
+		  </div>
+		  <div class="col-sm-6 col-md-4 imgag-img">
+		   <img src="images/img-portfolio/09.jpg" alt="">
+		   <div class="txt">
+	           <h2>Lorem ipsum dolor</h2>
+	           <span>consectetur adipisicing elit. Quod,<br>
+	           nam corporis quas, saepe minima error 
+	           aperiam dolorum aliquam</span>
+           </div>
+		  </div>
+		 <div class="col-sm-6 col-md-4 imgag-img">
+		   <img src="images/img-portfolio/10.jpg" alt="">
+		   <div class="txt">
+	           <h2>Lorem ipsum dolor</h2>
+	           <span>consectetur adipisicing elit. Quod,<br>
+	           nam corporis quas, saepe minima error 
+	           aperiam dolorum aliquam</span>
+           </div>
+		  </div>
+		</div>
+    </div>
+
+    <div class="container-fluid wow services">
+     <div class="container">
+      <div class="row">
+     <!-- info-section -->
+        <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown text-center">
+    			<h2>Stats</h2>
+    			<p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, nam corporis quas, saepe minima error aperiam dolorum aliquam, quis deserunt eos eius quisquam odio itaque.</p>
+        </div>
+
+        <div class=" text-center">
+		  <div class="col-md-3 col-sm-6 col-xs-12 text-xs-center">
+		    <i class="icon_mic_alt wow pulse"></i>
+		     <h4>Photography</h4>
+		     <h2>100,000</h2>
+		  </div>
+		  <div class="col-md-3 col-sm-6 col-xs-12 text-xs-center">
+		    <i class="icon_gift_alt wow pulse"></i>
+		     <h4> Nature</h4>
+		     <h2>34201</h2>
+		  </div>
+		  <div class="col-md-3 col-sm-6 col-xs-12 text-xs-center">
+		    <i class="icon_mobile wow pulse"></i>
+		     <h4>Wiled</h4>
+		     <h2>152</h2>
+		  </div>
+		  <div class="col-md-3 col-sm-6 col-xs-12 text-xs-center">
+		    <i class="icon_lightbulb_alt wow pulse"></i>
+		     <h4>Storybook</h4>
+		     <h2>56500</h2>
+		  </div>
+		</div>
+      </div>
+     </div>
+   </div>
+
+    <div class="container wow" id="pricing">
+    <!-- container 容器 -->
+        <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown text-center">
+    			<h2>Pricing</h2>
+    			<p class="col-md-10 col-sm-10 col-xs-12 col-md-offset-1 col-sm-offset-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, nam corporis quas, saepe minima error aperiam dolorum aliquam, quis deserunt eos eius quisquam odio itaque.</p>
+    
+    	</div>
+	    <div class="row">
+		  <div class="col-md-4 col-sm-4 col-xs-12 pricing-plans wow bounceInLeft hoverer ">
+		    <div class="pricing-titles">
+		        <h3 class="text-center">Photography</h3>
+		        <p class="text-center"><span>$16/Month</span></p>
+		        </div>
+		      <div class="caption text-center pricing-service-name">
+		        <ul>
+		        	<li>30 Tempaltes</li>
+		        	<li>Responsive</li>
+		        	<li>3 Years Hosting</li>
+		        	<li>100 GB Data</li>
+		        	<li>Unlimited Bandwidth</li>
+		        	<li>24/7 Support</li>
+		        </ul>
+		      <div class="text-center Get">
+		        <p class="text-center"><a href="#" class="btn btn-primary" role="button">Get Now</a></p>
+		    </div> </div>
+		  </div>
+		  <div class="col-md-4 col-sm-4 col-xs-12 pricing-plans wow bounceInLeft hoverer ">
+		    <div class="pricing-titles">
+		        <h3 class="text-center">Photography</h3>
+		        <p class="text-center"><span>$69/Month</span></p>
+		        </div>
+		      <div class="caption text-center pricing-service-name">
+		        <ul>
+		        	<li>30 Tempaltes</li>
+		        	<li>Responsive</li>
+		        	<li>3 Years Hosting</li>
+		        	<li>100 GB Data</li>
+		        	<li>Unlimited Bandwidth</li>
+		        	<li>24/7 Support</li>
+		        </ul>
+		      <div class="text-center Get">
+		        <p class="text-center"><a href="#" class="btn btn-primary" role="button">Get Now</a></p>
+		    </div> </div>
+		  </div>
+		  <div class="col-md-4 col-sm-4 col-xs-12 pricing-plans wow bounceInLeft hoverer ">
+		    <div class="pricing-titles">
+		        <h3 class="text-center">Photography</h3>
+		        <p class="text-center"><span>$99/Month</span></p>
+		        </div>
+		      <div class="caption text-center pricing-service-name">
+		        <ul>
+		        	<li>30 Tempaltes</li>
+		        	<li>Responsive</li>
+		        	<li>3 Years Hosting</li>
+		        	<li>100 GB Data</li>
+		        	<li>Unlimited Bandwidth</li>
+		        	<li>24/7 Support</li>
+		        </ul>
+		      <div class="text-center Get">
+		        <p class="text-center"><a href="#" class="btn btn-primary" role="button">Get Now</a></p>
+		    </div> </div>
+		  </div>
+		</div>
+	</div>
+
+	<div class="container-fluid services wow">
+	 <div class="container">
+     <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 section-header wow fadeInDown text-center">
+    			<h2>Team</h2>
+    			<p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, nam corporis quas, saepe minima error aperiam dolorum aliquam, quis deserunt eos eius quisquam odio itaque.</p>
+        </div>
+
+        <div class=" text-center">
+		  <div class="col-md-3 col-sm-6 col-xs-12 text-xs-center img-4">
+		    <a href=""><img src="images/img-teams/team1.jpg" alt=""></a>
+		    <p>Chris Willam</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisic</p>
+		  </div>
+		  <div class="col-md-3 col-sm-6 col-xs-12 text-xs-center img-4">
+		    <a href=""><img src="images/img-teams/team2.jpg" alt=""></a>
+		    <p>Chris Willam</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisic</p>
+		  </div>
+		  <div class="col-md-3 col-sm-6 col-xs-12 text-xs-center img-4">
+		    <a href=""><img src="images/img-teams/team3.jpg" alt=""></a>
+		    <p>Chris Willam</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisic</p>
+		  </div>
+		  <div class="col-md-3 col-sm-6 col-xs-12 text-xs-center img-4">
+		    <a href=""><img src="images/img-teams/team4.jpg" alt=""></a>
+		    <p>Chris Willam</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisic</p>
+		  </div>
+		</div>
+      </div>
+     </div>
+   </div>
+   <div class="section-wrapper contact-section" id="Contact Us">
+   <div class="container ">
+   	<div class="row text-center">
+   	 <div class="col-md-12 col-sm-12 col-xs-12 section-header fadeInDown text-center">
+      <h2>Contact Us</h2>
+      <p class="col-md-8 col-sm-10 col-xs-12 col-md-offset-2 col-sm-offset-1">We love feedback. Fill out the form below and we'll get back to you as soon as possible. in minus distinctio dolores ipsam.</p>
+     </div>
+     <form class="">
+	  <div class="form-group col-md-6">
+	    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+	  </div>
+	  <div class="form-group col-md-6">
+	    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+	  </div>
+	  <div class="com-md-12 container">
+	  	<textarea class="form-control" rows="10" cols="100" placeholder="Message" style="resize: none;"></textarea>
+	  </div>
+	  <div class="col-md-12 container">
+	   <br>
+	   <button type="Submit Message" class="btn btn-primary">Submit Message</button>
+	  </div>
+     </form>
+   	</div>
+   </div>
+   <div class="container-fluid services wow">
+   <div class="container">
+   	<div class="row footer-consectetur">
+   	  <div class="col-md-4">
+   	  	<img src="images/logo.png" alt="">
+   	  	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et porro quos iste ratione doloribus asperiores, error omnis delectus rerum sapiente. Et, aliquam modi beatae quae in perferendis ab est fugiat!</p>
+   	  </div>
+   	  <div class="col-md-4">
+   	  	<h4>News & Updates</h4>
+   	  	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et porro quos iste ratione doloribus asperiores, error omnis delectus rerum sapiente. Et, aliquam modi beatae quae in perferendis ab est fugiat!</p>
+   	  </div>
+   	  <div class="col-md-4">
+   	  	<h4>Contact Us</h4>
+   	  	<ul>
+   	  		<li><p>Lorem ipsum dolor sit amet adipisicing elit.</p></li>
+   	  		<li><p><i class="fa fa-home"></i>&nbsp;123 New Venu Street</p></li>
+   	  		<li><p><i class="fa fa-phone"></i>&nbsp;001 123 12345 99</p></li>
+   	  		<li><p><i class="fa fa-envelope-o"></i>&nbsp;support@website.com</p></li>
+   	  	</ul>
+   	  </div>
+   	</div>
+   </div>
+  </div>
+    <footer>
+   	 <div class="container">
+   	  <div class="row ">
+   	    <div class="text-center">
+   	  	   <ul class="footer-social-info">
+   	  		  <li>
+   	  			<a href="#">
+   	  			<i class="fa fa-facebook"></i>
+   	  			</a>
+   	  		  </li>
+   	  		  <li>
+   	  			<a href="#">
+   	  			<i class="fa fa-twitter"></i>
+   	  			</a>
+   	  		  </li>
+   	  		  <li>
+   	  			<a href="#">
+   	  			<i class="fa fa-pinterest"></i>
+   	  			</a>
+   	  		  </li>
+   	  		   <li>
+   	  			<a href="#">
+   	  			<i class="fa fa-google-plus"></i>
+   	  			</a>
+   	  		  </li>
+   	  	   </ul>
+   	    </div>
+   	  </div>
+   	 </div>
+   	</div>
+   </footer>
+   <script src='js/jquery-1.11.1.js'></script>
+   <script src='js/bootstrap.js'></script>
+   <script>
+   $(function(){
+   	$('.one,.tow').removeClass();})
+   	$('.imgag-img').hover(function() {
+   		$(this).children('.txt').stop().fadeIn()
+   	}, function() {
+   		$(this).children('.txt').stop().fadeOut()
+   	});
+   
+   </script>
+    </body>
+</html>
